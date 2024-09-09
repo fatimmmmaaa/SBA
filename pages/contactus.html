@@ -4,19 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <link rel="stylesheet" href="../styles/contactus.css" />
 
     <style> 
+
         th {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-weight: bold;
         }
 
-        table {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            text-align: center;
-        }
 
         td {
             border: 2px solid #000;
@@ -24,7 +20,17 @@
 
     </style>
   </head>
+
+
   <body>
+    <a href="../index.html" id="goback" class="goback">Home</a>
+    <div class="form">
+                <h2>Contact Us</h2>
+                <hr>
+            </div>
+        </form> 
+
+    </div>
 
     <div>
         <table>
@@ -36,17 +42,33 @@
 
             <tr>
               <td>CEO</td>
-              <td>Manager</td>
-              <td>Customer Service</td>
+              <td>CEO Obvi</td>
+              <td>ceo@xyz.com</td>
             </tr>
 
             <tr>
-              <td>Loremipsum@xyz.com</td>
-              <td>Psumlitsit@xyz.com</td>
-              <td>Ipsumdolor.com</td>
+              <td>Manager</td>
+              <td>Manager Duh</td>
+              <td>manager@xyz.com</td>
             </tr>
+
+            <tr>
+                <td>Customer Service</td>
+                <td>Team Service</td>
+                <td>customerservice@xyz.com</td>
+              </tr>
           </table>
     </div>
+
+    <div>
+        <input type="text" name="name" placeholder="Name" class="contactus" required>
+        <input type="email" name="email" placeholder="Email" class="contactus" required>
+        <input type="text" name="Subject" placeholder="Subject" class="contactus" required>
+        <textarea name="message" placeholder="Message" class="contactus" required></textarea> 
+        <button type="submit">Submit</button>
+    </div>
+
+
 
 
   </body>
